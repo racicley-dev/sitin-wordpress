@@ -9,6 +9,9 @@
     display: flex;
     justify-content: space-between;
 }
+.header-container img {
+    height: 3rem;
+}
 
 .btn-orcamento {
     /* background-color: #0066CC; */
@@ -17,6 +20,7 @@
     border-color: #0066CC;
     border: 2px solid #0066CC;
     text-transform: uppercase;
+    text-decoration: none;
 
 }
 

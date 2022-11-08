@@ -1,14 +1,24 @@
 /* Header */
 
+
+
 .header-container {
-    padding: 2rem; 
+    padding: 2rem 4rem; 
     display: flex;
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
 
+.btn-orcamento {
+    /* background-color: #0066CC; */
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border-color: #0066CC;
+    border: 2px solid #0066CC;
+    text-transform: uppercase;
 
+}
 
 /* MENU HAMBURGUER */
 
@@ -28,7 +38,7 @@
     /* position: absolute; */
   
     /* height: 100px; */
-    width: 100px;
+    width: 6rem;
   
     top: 0;
     right: 6rem;
@@ -46,25 +56,25 @@
   
     background-color: #1E1E2A;
   
-    width: 50px;
-    height: 2px;
+    width: 2.5rem;
+    height: 0.125rem;
     border-radius: 4px;
   
     transition: 0.5s ease-in-out;
   }
   
   .checkbox .trace:nth-child(1) {
-    top: 26px;
+    top: 2.5rem;
     transform: rotate(0);
   }
   
   .checkbox .trace:nth-child(2) {
-    top: 46px;
+    top: 3.5rem;
     transform: rotate(0);
   }
   
   .checkbox .trace:nth-child(3) {
-    top: 66px;
+    top: 4.5rem;
     transform: rotate(0);
   }
   
@@ -149,11 +159,13 @@
 
 
 
-
-
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+
+
+/* Footer */
 
 .footer-container {
     padding: 3.5rem 7.5rem ;

@@ -1,0 +1,35 @@
+.titulo-footer{
+    font-size: 48px;
+    margin-left: 120px;
+}
+
+.contato-footer {
+    font-size: 24px;
+    color: #0066CC;
+    margin-left: 120px;
+}
+
+.copyright {
+    font-size: 18px;
+    color: #5A5A5A;
+    text-align: center;
+}
+
+imagens-footer{
+    margin-left: 120px;
+}
+
+.logo-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 123px;
+    width: 203px;
+    
+
+}
+
+
+footer {
+    background: linear-gradient(233.7deg, #FFFFFF 1.47%, #F0F0F0 100%);
+}

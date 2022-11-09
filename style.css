@@ -264,7 +264,6 @@ body {
   letter-spacing: 0.385em;
   color: #000000;
   padding-top: 4rem;
-
 }
 
 .solucoes h2 {
@@ -276,13 +275,14 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-
 }
 
 .solucoes-container{
   display: flex;
-  padding-left: 4rem;
+  /* padding-left: 4rem; */
   padding-right: 6rem;
+  /* gap: 1.5rem; */
+  padding-top: 4rem;
 }
 
 .solucoes-container h4 {
@@ -295,9 +295,81 @@ body {
 
 .solucoes-caixa {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-start;
+  padding-top: 4rem;
+  /* gap: 1.5rem; */
+}
+
+.solucoes-caixa p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #1C1C1C;
+  width: 14rem;
+  text-align: justify;
+}
+
+.prancheta {
+  padding-top: 1.5rem;
+}
+
+/* Seção Clientes */
+
+.clientes {
+  background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
+}
+
+.clientes h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-align: center;
+  letter-spacing: 0.385em;
+  color: #FAFAFA;
   padding-top: 4rem;
 }
+
+.clientes h2 {
+  text-align: center;
+  padding-top: 0.25rem;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 2.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FAFAFA;
+}
+
+.clientes-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3rem;
+  padding-bottom: 5.5rem;
+}
+
+.elipse {
+  border-radius: 50%;
+  display: inline-block;
+  height: 14.5rem;
+  width: 14.5rem;
+  /* border: 1px solid #000000; */
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:  0 0 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* Seção Orçamento */
+
+
+
+
+
 /* Pagina Serviços */
 
 /* Sites e landing pages */

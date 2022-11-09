@@ -418,8 +418,52 @@ body {
   color: #FFFFFF;
 }
 
+/* Seção Parcerias */
 
+.parcerias {
+  background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
+}
 
+.parcerias h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-align: center;
+  letter-spacing: 0.385em;
+  color: #FAFAFA;
+  padding-top: 4rem;
+}
+
+.parcerias h2 {
+  text-align: center;
+  padding-top: 0.25rem;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 2.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FAFAFA;
+}
+
+.parcerias-container-quatro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.parcerias-container-tres {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 5.5rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
 
 /* Pagina Serviços */
 

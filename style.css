@@ -566,6 +566,8 @@ body {
 
 /* Página Quem Somos */
 
+/* Seção Sobre IN Junior */
+
 .sobre-in-junior {
   display: flex;
   flex-direction: column;
@@ -676,6 +678,44 @@ body {
 
 .caixas-valores div p {
   width: 7.5rem;
+}
+
+/* Seção Movimento Empresa Junior */
+
+.mej {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 14rem;
+}
+
+.mej h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.5rem;
+  color: #1C1C1C;
+  padding-bottom: 2rem;
+}
+
+.mej p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #666666;
+}
+
+.caixas-mej {
+  display: flex;
+  gap: 3.5rem;
+  padding-bottom: 2rem;
+}
+
+.caixas-mej p {
+  width: 25rem;
+  height: 9rem;
+  text-align: justify;
 }
 
 

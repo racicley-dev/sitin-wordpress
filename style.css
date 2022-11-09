@@ -205,6 +205,8 @@ body {
     color: #FFFFFF;
 }
 
+/* Seção resultados */
+
 .resultado {
     background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);;
     display: flex;
@@ -219,14 +221,6 @@ body {
     font-weight: 600;
     color: #FAFAFA;
 }
-/* .resultado div:nth-child(2) {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-} */
-/* .resultado div:nth-child(1) {
-    width: 50%;
-} */
 
 .numeros {
     display: flex;
@@ -234,7 +228,6 @@ body {
     gap: 4rem;
     margin-right: 6rem;
 }
-
 
 .resultado > div {
     display: flex;
@@ -255,6 +248,111 @@ body {
     width: 7rem;
     text-align: center;
 }
+
+/* Pagina Serviços */
+
+/* Sites e landing pages */
+
+.sites, .aplicativos, .sistemas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sites, .aplicativos {
+  background-image: url("./assets/Path.svg");
+  margin-top: 3.5rem;
+  /* padding-top: 1.5rem; */
+}
+
+
+.site-titulo, .aplicativo-titulo {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FAFAFA;
+  text-align: center;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+
+.sistema-titulo {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1C1C1C;
+  text-align: center;
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+}
+
+.imgText {
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+}
+
+.textImg {
+  display: flex;
+  align-items: center;
+  padding-left: 6rem;
+}
+
+.site-texto, .aplicativo-texto {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #FAFAFA;
+  width: 62rem;
+  text-align: justify;
+}
+
+.sistema-texto {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #1C1C1C;
+  width: 62rem;
+  text-align: justify;
+}
+
+.orcamento-btn {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background: linear-gradient(89.13deg, #0066CC 1.18%, #004891 101.08%);
+  box-shadow: 3px 3px 4px rgb(0 0 0 / 25%), inset 5px 5px 10px #0075eb;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  height: 1rem;
+}
+
+
+.aplicativos {
+  padding-bottom: 8rem;
+}
+
+
+
+
+
+
+
+
 
 
 /* Footer */

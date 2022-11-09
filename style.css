@@ -465,6 +465,7 @@ body {
   padding-right: 7rem;
 }
 
+
 /* Pagina Serviços */
 
 /* Sites e landing pages */
@@ -563,12 +564,77 @@ body {
 }
 
 
+/* Página Quem Somos */
+
+.sobre-in-junior {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.elipse-somos {
+  background: rgba(0, 95, 191, 0.8);
+  border: 3px solid rgba(67, 136, 204, 0.5);
+  box-shadow: inset 0px 0px 30px rgba(67, 136, 204, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  height: 20rem;
+  width: 20rem;
+  box-sizing: border-box;
 
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
 
+.container-missao-visao {
+  display: flex;
+  padding: 0 14rem;
+  justify-content: center;
+  gap: 3rem;
+}
 
+.container-missao-visao h3 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.5rem;
+  color: #1C1C1C;
+  padding-bottom: 2.25rem;
+  text-align: center;
+}
 
+.container-missao-visao p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #666666;
+  text-align: justify;
+}
 
+.caixa-missao, .caixa-visao {
+  width: 27rem;
+}
+
+.valores {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  color: #1C1C1C;
+}
+
+.caixas-valores {
+  display: flex;
+  gap: 2rem;
+}
+.caixas-valores div {
+  text-align: center;
+}
 
 
 /* Footer */

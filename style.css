@@ -1,9 +1,11 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Header */
 
-
-
 .header-container {
-    padding: 2rem 4rem; 
+    padding: 2rem 4rem 0 4rem; 
     display: flex;
     align-items: center;
     display: flex;
@@ -14,7 +16,6 @@
 }
 
 .btn-orcamento {
-    /* background-color: #0066CC; */
     padding: 1rem 2rem;
     border-radius: 5px;
     border-color: #0066CC;
@@ -161,12 +162,99 @@
     opacity: 1;
   }
 
+/* Pagina Index */
 
+/* Seção Destaque */
 
-body {
-    font-family: 'Poppins', sans-serif;
+.destaque {
+    display: flex;
+    padding: 0 1.5rem 0 4.5rem ;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.destaque p:first-child {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    color: #1C1C1C;
+    width: 43rem;
+    margin-bottom: 2.5rem;
+}
+
+.destaque p:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.25rem;
+    color: #1C1C1C;
+    width: 43rem;
+    margin-bottom: 3rem;
+}
+
+.destaque a {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    background: linear-gradient(89.13deg, #0066CC 1.18%, #004891 101.08%);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25), inset 5px 5px 10px #0075EB;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+.resultado {
+    background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: space-between;
+    height: 14.5rem;
+}
+
+.resultado p:first-child {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #FAFAFA;
+}
+/* .resultado div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+} */
+/* .resultado div:nth-child(1) {
+    width: 50%;
+} */
+
+.numeros {
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    margin-right: 6rem;
+}
+
+
+.resultado > div {
+    display: flex;
+    align-items: center;
+}
+
+.txt-esforco {
+    font-weight: 600;
+    font-size: 2.25rem;
+    color: #FAFAFA;
+    width: 18.5rem;
+}
+
+.texto-esforco {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FAFAFA;
+    width: 7rem;
+    text-align: center;
+}
 
 
 /* Footer */

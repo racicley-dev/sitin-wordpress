@@ -366,6 +366,57 @@ body {
 
 /* Seção Orçamento */
 
+.orcamento-container {
+  display: flex;
+}
+
+.orcamento-container img {
+  padding-left: 6.6rem;
+}
+
+.orcamento-textos {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  align-content: flex-end;
+  padding: 4.5rem 7rem 7.5rem 3rem;
+  /* padding-top: 4.5rem;
+  padding-right: 7rem;
+  padding-bottom: 7.5rem;
+  padding-left: 3rem; */
+}
+.orcamento-textos h2 {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  text-align: right;
+  color: #000000;
+  padding-bottom: 1.5rem;
+}
+
+.orcamento-textos h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  text-align: right;
+  color: #000000;
+  text-align: justify;
+  padding-bottom: 2.5rem;
+}
+
+.orcamento-botao {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  background: linear-gradient(89.13deg, #0066CC 1.18%, #004891 101.08%);
+  box-shadow: 3px 3px 4px rgb(0 0 0 / 25%), inset 5px 5px 10px #0075eb;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #FFFFFF;
+}
 
 
 

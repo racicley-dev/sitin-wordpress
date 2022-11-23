@@ -22,139 +22,221 @@
 
 }
 
-/* MENU HAMBURGUER */
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+// TENTANDO FAZER MENU HAMBURGUER
+.cabecalho__menu-hamburguer {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/menu-hamburguer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
 }
 
-.checkbox-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .checkbox {
-    /* position: absolute; */
-  
-    /* height: 100px; */
-    width: 6rem;
-  
-    top: 0;
-    right: 6rem;
-  
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-  
-    z-index: 999;
-    transition: 400ms ease-in-out 0s;
-  }
-  
-  .checkbox .trace {
-    position: absolute;
-  
-    background-color: #1E1E2A;
-  
-    width: 2.5rem;
-    height: 0.125rem;
-    border-radius: 4px;
-  
-    transition: 0.5s ease-in-out;
-  }
-  
-  .checkbox .trace:nth-child(1) {
-    top: 1.5rem;
-    transform: rotate(0);
-  }
-  
-  .checkbox .trace:nth-child(2) {
-    top: 2.5rem;
-    transform: rotate(0);
-  }
-  
-  .checkbox .trace:nth-child(3) {
-    top: 3.5rem;
-    transform: rotate(0);
-  }
-  
-  #toggle {
-    display: none;
-  }
-/* MENU */
-
-.menu {
-  position: absolute;
-
-  top: 28px;
-  right: 30px;
-  background-color: transparent;
-  height: 8px;
-  width: 20px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 0px 0px #fff;
-  z-index: -1;
-  transition: 400ms ease-in-out 0s;
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+  background-image: url(../../assets/menu-hamburguer.svg);
 }
 
-.menu-items {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+.container__botao:checked ~ .container__rotulo {
+  background: $azul-gradiente;
+}
+
+.cabecalho {
+  background-color: $branco;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  z-index: 2;
-  opacity: 0;
-  visibility: hidden;
-  transition: 400ms ease-in-out 0s;
+  position: relative;
 }
 
-.list {
-  list-style-type: none;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* margin: 24px 32px;
+  gap: 30px; */
 }
 
-.list-item {
-  color: #1E1E2A;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 4px;
+.container__imagem {
+  padding: 1em;
 }
 
-/* ANIMAÇÃO DO MENU */
+.lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60vw;
+  background-color: $branco;
+}
 
-#toggle:checked + .checkbox .trace:nth-child(1) {
-    transform: rotate(45deg);
-    top: 47px;
-  }
+.container__botao:checked~.lista-menu {
+  display: block;
+}
+
+.container__botao {
+  display: none;
+}
+
+.lista-menu__titulo, 
+.lista-menu__item {
+  padding: 1em;
+  background-color: #fff;
+}
+
+.lista-menu__titulo {
+  color: var(--laranja);
+  font-weight: 700;
+}
+
+.lista-menu__item {
+  background: $azul-gradiente;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.opcoes {
+  display: none ;
+}
+
+.container__texto {
+  display: none;
+}
+
+
+// /* MENU HAMBURGUER */
+
+// .header{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .checkbox-container {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
   
-  #toggle:checked + .checkbox .trace:nth-child(2) {
-    transform: translate(-100px);
-    width: 30px;
-    visibility: hidden;
-    opacity: 0;
-  }
+//   .checkbox {
+//     /* position: absolute; */
   
-  #toggle:checked + .checkbox .trace:nth-child(3) {
-    transform: rotate(-45deg);
-    top: 47px;
-  }
+//     /* height: 100px; */
+//     width: 6rem;
   
-  #toggle:checked + .checkbox {
-    background-color: #fff;
-  }
+//     top: 0;
+//     right: 6rem;
   
-  #toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax #fff;
-    z-index: 1;
-  }
+//     display: flex;
+//     justify-content: center;
+//     cursor: pointer;
   
-  #toggle:checked ~ .menu-items {
-    visibility: visible;
-    opacity: 1;
-  }
+//     z-index: 999;
+//     transition: 400ms ease-in-out 0s;
+//   }
+  
+//   .checkbox .trace {
+//     position: absolute;
+  
+//     background-color: #1E1E2A;
+  
+//     width: 2.5rem;
+//     height: 0.125rem;
+//     border-radius: 4px;
+  
+//     transition: 0.5s ease-in-out;
+//   }
+  
+//   .checkbox .trace:nth-child(1) {
+//     top: 1.5rem;
+//     transform: rotate(0);
+//   }
+  
+//   .checkbox .trace:nth-child(2) {
+//     top: 2.5rem;
+//     transform: rotate(0);
+//   }
+  
+//   .checkbox .trace:nth-child(3) {
+//     top: 3.5rem;
+//     transform: rotate(0);
+//   }
+  
+//   #toggle {
+//     display: none;
+//   }
+// /* MENU */
+
+// .menu {
+//   position: absolute;
+
+//   top: 28px;
+//   right: 30px;
+//   background-color: transparent;
+//   height: 8px;
+//   width: 20px;
+//   border-radius: 50%;
+//   box-shadow: 0px 0px 0px 0px #fff;
+//   z-index: -1;
+//   transition: 400ms ease-in-out 0s;
+// }
+
+// .menu-items {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   z-index: 2;
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: 400ms ease-in-out 0s;
+// }
+
+// .list {
+//   list-style-type: none;
+// }
+
+// .list-item {
+//   color: #1E1E2A;
+//   font-size: 2rem;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   letter-spacing: 4px;
+// }
+
+// /* ANIMAÇÃO DO MENU */
+
+// #toggle:checked + .checkbox .trace:nth-child(1) {
+//     transform: rotate(45deg);
+//     top: 47px;
+//   }
+  
+//   #toggle:checked + .checkbox .trace:nth-child(2) {
+//     transform: translate(-100px);
+//     width: 30px;
+//     visibility: hidden;
+//     opacity: 0;
+//   }
+  
+//   #toggle:checked + .checkbox .trace:nth-child(3) {
+//     transform: rotate(-45deg);
+//     top: 47px;
+//   }
+  
+//   #toggle:checked + .checkbox {
+//     background-color: #fff;
+//   }
+  
+//   #toggle:checked ~ .menu {
+//     box-shadow: 0px 0px 0px 100vmax #fff;
+//     z-index: 1;
+//   }
+  
+//   #toggle:checked ~ .menu-items {
+//     visibility: visible;
+//     opacity: 1;
+//   }

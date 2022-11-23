@@ -3,48 +3,54 @@
 .orcamento__container {
     display: flex;
     flex-direction: column;
-  }
-  
-  .orcamento__container img {
-    // padding-left: 6.6rem;
-  }
-  
-  .orcamento__textos {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    align-content: flex-end;
-    // padding: 4.5rem 7rem 7.5rem 3rem;
-    h2 {
-      font-weight: 500;
-      font-size: 1.5rem;
-      line-height: 2rem;
-      text-align: right;
-      color: #000000;
-      // padding-bottom: 1.5rem;
-    }
-    h3 {
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      text-align: right;
-      color: #000000;
-      text-align: justify;
-      // padding-bottom: 2.5rem;
+    padding: 2.5rem 1.25rem;
+
+    .orcamento__textos {
+      display: flex;
+      flex-direction: column;
+
+      .orcamento__textos-titulo{
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: left;
+        color: #000000;
+      }
+
+      .orcamento__textos-paragrafo {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: left;
+        color: #000000;
+        text-align: justify;
+        padding: 1.25rem 0;
+      }
     }
 
+    img {
+      padding-bottom: 1.25rem;
+    }
+
+    .orcamento__img-botao {
+      text-align: center;
+    }
+
+    .orcamento__botao {
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 1rem 2rem;
+      background: $linear-gradiente;
+      box-shadow: 3px 3px 4px rgb(0 0 0 / 25%), inset 5px 5px 10px #0075eb;
+      border-radius: 5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+      color: $branco;
+    }
   }
+  
+  
     
-  .orcamento__botao {
-    font-size: 1rem;
-    font-weight: 600;
-    // padding: 1rem 2rem;
-    background: $linear-gradient;
-    box-shadow: 3px 3px 4px rgb(0 0 0 / 25%), inset 5px 5px 10px #0075eb;
-    border-radius: 5px;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    color: $branco;
-  }
+  

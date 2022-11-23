@@ -7,16 +7,13 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    // padding: 0 1.5rem 0 1.5rem;
     padding-bottom: 2.5rem;
     margin-top: 2.5rem;
-    // gap: 4rem;
     justify-content: space-between;
-    // height: 14.5rem;
 
     .resultado__container {
         display: flex;
-        padding-bottom: 1.25rem;
+        // padding-bottom: 1.25rem;
 
         .resultado__imagem-grande {
             display: none;
@@ -24,13 +21,19 @@
 
         img {
             align-self: flex-start;
+            position: relative;
+            top: -3.75rem;
+            right: 0.25rem;
         }
 
         .resultado__titulo {
             font-weight: 600;
             font-size: 1.5rem;
             color: #FAFAFA;
-            align-self: flex-end;
+            align-self: center;
+            position: relative;
+            left: 1.5rem;
+            top: 1rem;
         }
     }
 

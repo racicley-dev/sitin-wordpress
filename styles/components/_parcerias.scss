@@ -1,28 +1,29 @@
 @import '../abstract/variaveis';
 
-
 .parcerias {
     background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
+    
   }
   
   .parcerias h3 {
-    text-align: center;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1rem;
     text-align: center;
     letter-spacing: 0.385em;
-    color: #FAFAFA;
-    padding-top: 4rem;
+    color: $branco-light;
+    padding-top: 2.5rem;
+    max-width: 15rem;
+    margin: 0 auto;
   }
   
   .parcerias h2 {
     text-align: center;
-    padding-top: 0.25rem;
+    padding-top: 0.5rem;
     font-weight: 500;
-    font-size: 2.25rem;
-    line-height: 2.6rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     text-align: center;
     text-transform: uppercase;
     color: #FAFAFA;

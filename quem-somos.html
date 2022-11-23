@@ -6,48 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem Somos</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <img src="./assets/Logo.svg" alt="Logo da IN Junior">
-            <!-- <div class="hamburguer-container"> -->
-            <!-- <a href="./servicos.html">Orçamento Grátis</a> -->
-            <!-- Menu Hamburguer -->
-            <div class="header">
-                <a class="btn-orcamento" href="servicos.html">Orçamento Grátis</a>
-                <div class="checkbox-container">
-                    <div class="checkbox-wrapper">
-                        <input type="checkbox" id="toggle">
-                        <label class="checkbox" for="toggle">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        </label>
-                        <div class="menu"></div>
-                        <nav class="menu-items">
-                        <ul class="list">
-                            <li><a class="list-item" href="#">Home</a></li>
-                            <li><a class="list-item" href="#">Sobre</a></li>
-                            <li><a class="list-item" href="#projects">Projetos</a></li>
-                        </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <!-- </div> -->
+    <header class="cabecalho">
+
+        <img class="container__item" src="./assets/Logo.svg" alt="Logo da IN JUNIOR">
+        <div class="container">
+
+            <input class="container__botao" type="checkbox" name="" id="menu">
+            <label for="menu" class=" ">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="">INÍCIO</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="">QUEM SOMOS</a>
+                </li> 
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="">PROCESSO SELETIVO</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="">CONTATO</a>
+                </li>
+                
+            </ul>
+            
+            
         </div>
+        
+        <ul class="opcoes">
+            <input class="opcoes__botao" type="checkbox" name="" id="opcoes-menu">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="">INÍCIO</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="">QUEM SOMOS</a>
+                </li> 
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="">PROCESSO SELETIVO</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="">CONTATO</a>
+                </li>
+            </ul>
+        </ul>
+
+
     </header>
 
     <main>
 
         <section class="sobre-in-junior">
             <div class="elipse-somos">
-                <h2>Somos a <br> IN Junior!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet erat turpis, eu efficitur turpis tincidunt vitae.</p>
+                <h2 class="elipse-somos-titulo">Somos a <br> IN Junior!</h2>
+                <p class="elipse-somos-paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet erat turpis, eu efficitur turpis tincidunt vitae.</p>
             </div>
 
             <div class="container-missao-visao">
@@ -67,11 +90,11 @@
 
                 <div class="caixas-valores">
                     <div>
-                        <img src="./assets/valores-espirito de alcateia.svg" alt="Imagem representando espírito de alcatéia">
+                        <img src="./assets/espirito de alcateiaespirto-de-alcateia.svg" alt="Imagem representando espírito de alcatéia">
                         <p>Espírito de Alcateia</p>
                     </div>
                     <div>
-                        <img src="./assets/valores-proalpha.svg" alt="Imagem representando pro alpha tividade">
+                        <img src="./assets/proalpha.svg" alt="Imagem representando pro alpha tividade">
                         <p>Pro
                             {alpha}
                             tividade</p>
@@ -94,7 +117,7 @@
 
         </section>
 
-        <section class="mej">
+        <!-- <section class="mej">
 
             <h2>Conheça o Movimento Empresa Júnior</h2>
             
@@ -145,24 +168,28 @@
             </div>
 
 
-        </section>
+        </section>   -->
  
     </main>
     
-    <footer>
-        <div class="footer-container">
-            <div class="info-footer">
-                <p class="titulo-footer">Vamos conversar!</p>
-                <p class="contato-footer">contato@injunior.com.br</p>
-                <div class="imagens-footer">
-                    <img src="./assets/instagram.svg" alt="Logo do instagram">
-                    <img src="./assets/facebook.svg" alt="Logo do facebook">
-                    <img src="./assets/linkedin.svg" alt="Logo do linkedin">
+    <!-- <footer>
+        <div class="footer__container">
+            <div class="footer__container-imagem-textos">
+                <div class="footer__container-informacao">
+                    <h3 class="footer__titulo">Vamos conversar!</h3>
+                    <p class="footer__contato">contato@injunior.com.br</p>
                 </div>
+                <img class="footer__logo" src="./assets/logo-in-pequena.svg" alt="Logo da IN Junior">
             </div>
-            <img class="logo-footer" src="./assets/Logo.svg" alt="Logo da IN Junior">
+            
+            <div class="footer__imagens">
+                <img src="./assets/instagram.svg" alt="Logo do instagram">
+                <img src="./assets/facebook.svg" alt="Logo do facebook">
+                <img src="./assets/linkedin.svg" alt="Logo do linkedin">
+            </div>
+            <p class="footer__copyright">© Copyright 2021. IN Junior. Todos os direitos reservados. NIterói, Brasil.</p>
         </div>
-        <p class="copyright">© Copyright 2021. IN Junior. Todos os direitos reservados. NIterói, Brasil.</p>
-    </footer>
+        
+    </footer> -->
 </body>
 </html>

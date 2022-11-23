@@ -419,4 +419,110 @@ body {
   display: flex;
   margin-top: 1.5rem;
   gap: 2.5rem;
+}
+
+.sobre-in-junior {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
+.sobre-in-junior .elipse-somos {
+  background: rgba(0, 95, 191, 0.8);
+  border: 3px solid rgba(67, 136, 204, 0.5);
+  box-shadow: inset 0px 0px 30px rgba(67, 136, 204, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  height: 20rem;
+  width: 20rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sobre-in-junior .elipse-somos .elipse-somos-titulo {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 2rem;
+  color: #FAFAFA;
+}
+.sobre-in-junior .elipse-somos .elipse-somos-paragrafo {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FAFAFA;
+}
+.sobre-in-junior .container-missao-visao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.sobre-in-junior .container-missao-visao h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #1C1C1C;
+  text-align: center;
+  position: relative;
+  top: -1rem;
+}
+.sobre-in-junior .container-missao-visao p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #666666;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+.sobre-in-junior .container-missao-visao .caixa-missao, .sobre-in-junior .container-missao-visao .caixa-visao {
+  background: #FAFAFA;
+  box-shadow: 5px 5px 0px rgba(0, 32, 146, 0.25);
+  border-radius: 16px;
+  padding: 0 1.25rem;
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.valores {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  color: #1C1C1C;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+}
+
+.caixas-valores {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1.25rem;
+  justify-content: space-between;
+}
+
+.caixas-valores div {
+  display: flex;
+  text-align: center;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 1rem;
+  width: 10rem;
+  height: 13rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixas-valores div p {
+  width: 7.5rem;
 }/*# sourceMappingURL=style.css.map */

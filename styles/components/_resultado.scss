@@ -1,0 +1,45 @@
+@import '../abstract/variaveis';
+
+
+.resultado {
+    background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: space-between;
+    height: 14.5rem;
+}
+
+.resultado p:first-child {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #FAFAFA;
+}
+
+.numeros {
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    margin-right: 6rem;
+}
+
+.resultado > div {
+    display: flex;
+    align-items: center;
+}
+
+.txt-esforco {
+    font-weight: 600;
+    font-size: 2.25rem;
+    color: #FAFAFA;
+    width: 18.5rem;
+    line-height: 3rem;
+}
+
+.texto-esforco {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FAFAFA;
+    width: 7rem;
+    text-align: center;
+}

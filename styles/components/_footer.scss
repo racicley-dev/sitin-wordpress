@@ -1,0 +1,53 @@
+@import '../abstract/variaveis';
+
+
+
+/* Footer */
+
+.footer-container {
+    padding: 3.5rem 7.5rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-footer {
+
+}
+
+.titulo-footer{
+    font-size: 48px;
+
+}
+
+.contato-footer {
+    font-size: 24px;
+    color: #0066CC;
+    margin: 0.5rem 0 1.25rem;
+
+}
+
+.copyright {
+    font-size: 18px;
+    color: #5A5A5A;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+.imagens-footer{
+    display: flex;
+    gap: 40px;
+}
+
+.logo-footer {
+    bottom: 0;
+    right: 0;
+    height: 123px;
+    width: 203px;    
+}
+
+
+footer {
+    background: linear-gradient(233.7deg, #FFFFFF 1.47%, #F0F0F0 100%);
+}

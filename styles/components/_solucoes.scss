@@ -1,0 +1,62 @@
+@import '../abstract/variaveis';
+
+
+.solucoes h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    text-align: center;
+    letter-spacing: 0.385em;
+    color: #000000;
+    padding-top: 4rem;
+  }
+  
+  .solucoes h2 {
+    text-align: center;
+    padding-top: 0.25rem;
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 2.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  
+  .solucoes-container{
+    display: flex;
+    /* padding-left: 4rem; */
+    padding-right: 6rem;
+    /* gap: 1.5rem; */
+    padding-top: 4rem;
+  }
+  
+  .solucoes-container h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #1C1C1C;
+  }
+  
+  .solucoes-caixa {
+    display: flex;
+    /* align-items: center; */
+    align-items: flex-start;
+    padding-top: 4rem;
+    /* gap: 1.5rem; */
+  }
+  
+  .solucoes-caixa p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #1C1C1C;
+    width: 14rem;
+    text-align: justify;
+  }
+  
+  .prancheta {
+    padding-top: 1.5rem;
+  }

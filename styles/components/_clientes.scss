@@ -3,31 +3,32 @@
 
 .clientes {
     background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
+    
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1rem;
+      text-align: center;
+      letter-spacing: 0.385em;
+      color: $branco-light;
+      padding-top: 2.5rem;
+    }
+
+    h2 {
+      text-align: center;
+      padding-top: 0.5rem;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FAFAFA;
+    }
   }
-  
-  .clientes h3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-    text-align: center;
-    letter-spacing: 0.385em;
-    color: #FAFAFA;
-    padding-top: 4rem;
-  }
-  
-  .clientes h2 {
-    text-align: center;
-    padding-top: 0.25rem;
-    font-weight: 500;
-    font-size: 2.25rem;
-    line-height: 2.6rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FAFAFA;
-  }
-  
+
+
   .clientes__container {
     display: flex;
     align-items: center;
@@ -48,4 +49,3 @@
     justify-content: center;
     box-shadow:  0 0 10px 1px rgba(0, 0, 0, 0.4);
   }
-  

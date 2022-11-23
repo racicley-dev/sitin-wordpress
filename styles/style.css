@@ -295,25 +295,23 @@ body {
 .clientes {
   background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
 }
-
 .clientes h3 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1rem;
   text-align: center;
   letter-spacing: 0.385em;
   color: #FAFAFA;
-  padding-top: 4rem;
+  padding-top: 2.5rem;
 }
-
 .clientes h2 {
   text-align: center;
-  padding-top: 0.25rem;
+  padding-top: 0.5rem;
   font-weight: 500;
-  font-size: 2.25rem;
-  line-height: 2.6rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   text-align: center;
   text-transform: uppercase;
   color: #FAFAFA;
@@ -340,57 +338,12 @@ body {
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
 }
 
-.orcamento__container {
+.orcamento_container {
   display: flex;
 }
-
-.orcamento__container img {
-  padding-left: 6.6rem;
-}
-
-.orcamento__textos {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  align-content: flex-end;
-  padding: 4.5rem 7rem 7.5rem 3rem;
-  /* padding-top: 4.5rem;
-  padding-right: 7rem;
-  padding-bottom: 7.5rem;
-  padding-left: 3rem; */
-}
-
-.orcamento__textos h2 {
-  font-weight: 500;
-  font-size: 3rem;
-  line-height: 4.5rem;
-  text-align: right;
-  color: #000000;
-  padding-bottom: 1.5rem;
-}
-
-.orcamento__textos h3 {
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2.25rem;
-  text-align: right;
-  color: #000000;
-  text-align: justify;
-  padding-bottom: 2.5rem;
-}
-
-.orcamento__botao {
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 1rem 2rem;
-  background: linear-gradient(89.13deg, #0066CC 1.18%, #004891 101.08%);
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25), inset 5px 5px 10px #0075eb;
-  border-radius: 5px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  color: #FFFFFF;
+.orcamento_container .orcamento__textos {
+  text-align: left;
+  padding-top: 2.5rem;
 }
 
 .parcerias {

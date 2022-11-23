@@ -1,62 +1,69 @@
 @import '../abstract/variaveis';
 
 
-.solucoes h3 {
+.solucoes {  
+  padding: 0 1.5rem 0 1.5rem;
+
+   h3 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
     text-align: center;
     letter-spacing: 0.385em;
     color: #000000;
-    padding-top: 4rem;
+    padding-top: 2.5rem;
   }
   
-  .solucoes h2 {
+  h2 {
     text-align: center;
-    padding-top: 0.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2.5rem;
     font-weight: 500;
-    font-size: 2.25rem;
-    line-height: 2.6rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
   }
   
-  .solucoes-container{
+  .solucoes__container{
     display: flex;
-    /* padding-left: 4rem; */
-    padding-right: 6rem;
-    /* gap: 1.5rem; */
-    padding-top: 4rem;
+    flex-direction: column;
+
+    article {
+      padding-bottom: 2.5rem;
+    }
+
+    .solucoes__container__titulo-imagem {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    h4 {
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.25rem;
+      // line-height: 2.5rem;
+      color: #1C1C1C;
+    }
+
+    .solucoes__caixa {
+      display: flex;
+      align-items: flex-start;
+      padding-top: 1.5rem;
+      p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        color: #1C1C1C;
+        // width: 14rem;
+        text-align: justify;
+      }
+      
+    }
   }
+}
+
   
-  .solucoes-container h4 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    color: #1C1C1C;
-  }
-  
-  .solucoes-caixa {
-    display: flex;
-    /* align-items: center; */
-    align-items: flex-start;
-    padding-top: 4rem;
-    /* gap: 1.5rem; */
-  }
-  
-  .solucoes-caixa p {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 150%;
-    color: #1C1C1C;
-    width: 14rem;
-    text-align: justify;
-  }
-  
-  .prancheta {
-    padding-top: 1.5rem;
-  }

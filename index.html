@@ -7,7 +7,6 @@
     <title>Página Inicial</title>
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon">
 </head>
@@ -46,7 +45,7 @@
 
     <main>
         <section class="destaque">
-            <div class="textos-destaque">
+            <div class="destaque__container-textos">
                 <p>Precisa se destacar no mercado ou de um sistema personalizado para o seu negócio?</p>
                 <p>Veio ao lugar certo! Nós podemos desenvolver o seu software da maneira que você precisa.</p>
                 <a href="servicos.html">ENTENDA OS NOSSOS SERVIÇOS</a>
@@ -56,24 +55,25 @@
         </section>
 
         <section class="resultado">
-            <div>
-                <img src="./assets/foguetinho.svg" alt="Imagem de homem em cima de um foguete">
-                <p class="txt-esforco">ESFORÇO COMPROVADO EM RESULTADOS </p>
+            <div class="resultado__container">
+                <img class="resultado__imagem-grande" src="./assets/foguetinho.svg" alt="Imagem de homem em cima de um foguete">
+                <p class="resultado__titulo">ESFORÇO COMPROVADO EM RESULTADOS </p>
+                <img class="resultado__imagem-pequena" src="./assets/foguetinho-pequeno.svg" alt="Imagem de homem em cima de um foguete">
             </div>
-            <div class="numeros">
+            <div class="resultado__numeros">
                 <div>
-                    <p>+8</p>
-                    <p class="texto-esforco">Anos de mercado</p>
+                    <p class="numero">+8</p>
+                    <p class="resultado__numero__textos">Anos de mercado</p>
                 </div>
 
                 <div>
-                    <p>+43</p>
-                    <p class="texto-esforco">Projetos concluídos</p>
+                    <p class="numero">+43</p>
+                    <p class="resultado__numero__textos">Projetos concluídos</p>
                 </div>
 
                 <div>
-                    <p>90%</p>
-                    <p class="texto-esforco">De satisfação do cliente</p>
+                    <p class="numero">90%</p>
+                    <p class="resultado__numero__textos">De satisfação do cliente</p>
                 </div>
             </div>
 
@@ -83,47 +83,50 @@
             <h3>O que fazemos?</h3>
             <h2>entenda as nossas soluções!</h2>
 
-            <div class="solucoes-container">
-                <div>
-                    <div>
-                        <h4>Sites e landing pages</h4>
-                    </div>
-                    <div class="solucoes-caixa">
-                        <img src="./assets/homeoffice.svg" alt="Imagem de Homem segurando um notebook">
-                        <p>Tornamos o seu negócio muito mais atrativo através do desenvolvimento de um site moderno, intuituvo e veloz, ajudando na divulgação do seu negócio e na captação de novos clientes.</p>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
+            <div class="solucoes__container">
+                <article>
+                    <div class="solucoes__container__titulo-imagem">
+                        <img src="./assets/sistemas-pequeno.svg" alt="Imagem de site com duas engrenagens, representando sistemas">
                         <h4>Sistemas</h4>
                     </div>
-                    <div class="solucoes-caixa">
-                        <img class="prancheta" src="./assets/prancheta.svg" alt="Imagem de prancheta">
+                    <div class="solucoes__caixa">
+                        
                         <p>Tornamos o seu negócio muito mais atrativo através do desenvolvimento de um site moderno, intuituvo e veloz, ajudando na divulgação do seu negócio e na captação de novos clientes.</p>
                     </div>
-                </div>
+                </article>
 
-                <div>
-                    <div>
+                <article>
+                    <div class="solucoes__container__titulo-imagem">
+                        <img class="solucoes__imagem" src="./assets/sistemas-pequeno.svg" alt="Imagem de um site representando uma landing page">
+                        <h4>Sites e landing pages</h4>
+                    </div>
+                    <div class="solucoes__caixa">
+                        
+                        <p>Tornamos o seu negócio muito mais atrativo através do desenvolvimento de um site moderno, intuituvo e veloz, ajudando na divulgação do seu negócio e na captação de novos clientes.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="solucoes__container__titulo-imagem">
+                        <img src="./assets/aplicativos-pequeno.svg" alt="Imagem de um aplicativo">
                         <h4>Aplicativos</h4>
                     </div>
-                    <div class="solucoes-caixa">
-                        <img src="./assets/app.svg" alt="Imagem de um aplicativo">
+                    <div class="solucoes__caixa">
+                        
                         <p>Tornamos o seu negócio muito mais atrativo através do desenvolvimento de um site moderno, intuituvo e veloz, ajudando na divulgação do seu negócio e na captação de novos clientes.</p>
                     </div>
-                </div>
+                </article>
             </div>
 
         </section>
 
-        <section class="clientes">
+        <!-- <section class="clientes">
 
             <h3>A QUEM ATENDEMOS?</h3>
 
             <h2>CONHEÇA ALGUNS DOS NOSSOS CLIENTES</h2>
 
-            <div class="clientes-container">
+            <div class="clientes__container">
                 <div class="elipse">
                     <img src="./assets/logo-coca-cola.svg" alt="Logo da Coca-cola">
                 </div>
@@ -143,18 +146,18 @@
         </section>
 
         <section class="orcamento">
-            <div class="orcamento-container">
+            <div class="orcamento__container">
 
-                <div class="orcamento-img">
+                <div class="orcamento__img">
                     <img src="./assets/duas-maos.svg" alt="Imagem de duas mãos se tocando">
                 </div>
 
-                <div class="orcamento-textos">
+                <div class="orcamento__textos">
                     <h2>ORÇAMENTO GRATUITO</h2>
 
                     <h3>Solicite um orçamento gratuitamente! Converse com um de nossos assessores para que consigamos entender o seu problema e propor a você a melhor solução possível!</h3>
 
-                    <p class="orcamento-botao">SOLICITE UMA AVALIAÇÃO AGORA</p>
+                    <p class="orcamento__botao">SOLICITE UMA AVALIAÇÃO AGORA</p>
                 </div>
             </div>
         </section>
@@ -198,28 +201,26 @@
             </div>
 
 
-        </section>
+        </section> -->
 
-    </main>
+    </main> 
 
 
-    <footer>
-        <div class="footer-container">
-            <div class="info-footer">
-                <p class="titulo-footer">Vamos conversar!</p>
-                <p class="contato-footer">contato@injunior.com.br</p>
-                <div class="imagens-footer">
+    <!-- <footer>
+        <div class="footer__container">
+            <div class="footer__container-informacao">
+                <p class="footer__titulo">Vamos conversar!</p>
+                <p class="footer__contato">contato@injunior.com.br</p>
+                <div class="footer__imagens">
                     <img src="./assets/instagram.svg" alt="Logo do instagram">
                     <img src="./assets/facebook.svg" alt="Logo do facebook">
                     <img src="./assets/linkedin.svg" alt="Logo do linkedin">
                 </div>
             </div>
-            <img class="logo-footer" src="./assets/Logo.svg" alt="Logo da IN Junior">
+            <img class="footer__logo" src="./assets/Logo.svg" alt="Logo da IN Junior">
         </div>
-        <p class="copyright">© Copyright 2021. IN Junior. Todos os direitos reservados. NIterói, Brasil.</p>
-    </footer>
+        <p class="footer__copyright">© Copyright 2021. IN Junior. Todos os direitos reservados. NIterói, Brasil.</p>
+    </footer> -->
     
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script> -->
 </body>
 </html>

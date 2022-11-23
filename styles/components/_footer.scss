@@ -4,30 +4,26 @@
 
 /* Footer */
 
-.footer-container {
+.footer__container {
     padding: 3.5rem 7.5rem ;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.info-footer {
-
-}
-
-.titulo-footer{
+.footer__titulo{
     font-size: 48px;
 
 }
 
-.contato-footer {
+.footer__contato {
     font-size: 24px;
     color: #0066CC;
     margin: 0.5rem 0 1.25rem;
 
 }
 
-.copyright {
+.footer__copyright {
     font-size: 18px;
     color: #5A5A5A;
     text-align: center;
@@ -35,12 +31,12 @@
     margin-top: 0.5rem;
 }
 
-.imagens-footer{
+.footer__imagens {
     display: flex;
     gap: 40px;
 }
 
-.logo-footer {
+.footer__logo {
     bottom: 0;
     right: 0;
     height: 123px;

@@ -1,7 +1,7 @@
 @import '../abstract/variaveis';
 
 .header-container {
-    padding: 2rem 4rem 0 4rem; 
+    padding: 1rem 0 0 1.25rem; 
     display: flex;
     align-items: center;
     display: flex;
@@ -12,12 +12,13 @@
 }
 
 .btn-orcamento {
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    border-color: #0066CC;
-    border: 2px solid #0066CC;
-    text-transform: uppercase;
-    text-decoration: none;
+  display: none;
+    // padding: 1rem 2rem;
+    // border-radius: 5px;
+    // border-color: #0066CC;
+    // border: 2px solid #0066CC;
+    // text-transform: uppercase;
+    // text-decoration: none;
 
 }
 
@@ -65,17 +66,17 @@
   }
   
   .checkbox .trace:nth-child(1) {
-    top: 2.5rem;
+    top: 1.5rem;
     transform: rotate(0);
   }
   
   .checkbox .trace:nth-child(2) {
-    top: 3.5rem;
+    top: 2.5rem;
     transform: rotate(0);
   }
   
   .checkbox .trace:nth-child(3) {
-    top: 4.5rem;
+    top: 3.5rem;
     transform: rotate(0);
   }
   

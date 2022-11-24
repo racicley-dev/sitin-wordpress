@@ -1,45 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <img src="./assets/Logo.svg" alt="Logo da IN Junior">
-            <!-- <div class="hamburguer-container"> -->
-            <!-- <a href="./servicos.html">Orçamento Grátis</a> -->
-            <!-- Menu Hamburguer -->
-            <div class="header">
-                <a class="btn-orcamento" href="servicos.html">Orçamento Grátis</a>
-                <div class="checkbox-container">
-                    <div class="checkbox-wrapper">
-                        <input type="checkbox" id="toggle">
-                        <label class="checkbox" for="toggle">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        </label>
-                        <div class="menu"></div>
-                        <nav class="menu-items">
-                        <ul class="list">
-                            <li><a class="list-item" href="#">Home</a></li>
-                            <li><a class="list-item" href="#">Sobre</a></li>
-                            <li><a class="list-item" href="#projects">Projetos</a></li>
-                        </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <!-- </div> -->
+    <header class="cabecalho">
+
+        <img class="container__item" src="./assets/Logo.svg" alt="Logo da IN JUNIOR">
+        <div class="container">
+
+            <input class="container__botao" type="checkbox" name="" id="menu">
+            <label for="menu" class=" ">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="./index.html">INÍCIO</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="./quem-somos.html">QUEM SOMOS</a>
+                </li> 
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="./processo-seletivo.html">PROCESSO SELETIVO</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="./contato.html">CONTATO</a>
+                </li>
+                
+            </ul>
+            
+            
         </div>
+        
+        <ul class="opcoes">
+            <input class="opcoes__botao" type="checkbox" name="" id="opcoes-menu">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="./index.html">INÍCIO</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="./quem-somos.html">QUEM SOMOS</a>
+                </li> 
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="./processo-seletivo.html">PROCESSO SELETIVO</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="./contato.html">CONTATO</a>
+                </li>
+            </ul>
+        </ul>
+
+
     </header>
 
     <main>

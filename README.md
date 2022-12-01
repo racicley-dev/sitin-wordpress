@@ -13,6 +13,8 @@ Este é um projeto desenvolvido para a IN Júnior, empresa júnior da Universida
 * Display flex e Grid
 * Tabelas
 * Formulários
+* Cards
+* Carrosel
 
 ## Caso queira ver o layout do projeto:
 

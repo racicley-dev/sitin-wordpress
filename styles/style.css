@@ -569,6 +569,16 @@ body {
   text-align: left;
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 600px) {
+  .mej__container .mej__container-textos {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .mej__container .mej__container-textos p {
+    max-width: 400px;
+    width: 50%;
+  }
+}
 
 .processo__seletivo__container {
   padding: 2rem 1.5rem 1.5rem 1.5rem;

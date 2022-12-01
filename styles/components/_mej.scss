@@ -33,5 +33,19 @@
             padding-bottom: 1rem;
         }
     }
+
+    @media screen and (min-width: 600px) {
+        
+        .mej__container-textos {
+            flex-direction: row;
+            gap: 1rem;
+
+            p {
+                max-width: 400px;
+                width: 50%;
+            }
+        }
+
+    }
 }
   

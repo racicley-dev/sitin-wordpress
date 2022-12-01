@@ -66,29 +66,59 @@
     </header>
 
     <main>
+        <div class="orcamento__container">
+            <div class="orcamento__container-textos">
+                <h2>Peça seu orçamento</h2>
 
-        <p>Peça seu orçamento</p>
+                <h3>Lorem, ipsum dolor sit amet, consectetur.</h3>
 
-        <p>Sobre Você</p>
-        <form action="">
-
-            <div>
-                <label for="nome-sobrenome">Nome <img src="./assets/icone-user.svg" alt="Icone de usuário"></label>
-                <input type="text" id="" class="input_padrao" placeholder="Digite aqui seu nome e sobrenome" required>
-
-                <label for="Telefone">Telefone <img src="./assets/icone-tel.svg" alt="Icone de telefone"></label>
-                <input type="tel" name="" id="Telefone" class="input_padrao" placeholder="(DDD) 99999-9999" required>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
             </div>
+            <form action="">
 
-            <div>
-                <label for="email">Email <img src="./assets/icone-msg.svg" alt="Icone de mensagem"></label>
-                <input type="email" name="" id="email" class="input_padrao" placeholder="seuemail@dominio.com" required>
+                <div class="form__container">
+                    <label for="nome-sobrenome">*Nome Completo</label>
+                    <input type="text" id="" class="input_padrao" placeholder="Digite aqui seu nome completo" required>
 
-                <label for="Telefone">Nome da empresa ou projeto <img src="./assets/icone-projeto.svg" alt="Icone de projeto"></label>
-                <input type="text" name="" id="" class="input_padrao" placeholder="projeto" required>
-            </div>
+                    <label for="email">*Email para Contato</label>
+                    <input type="email" name="" id="email" class="input_padrao" placeholder="seuemail@dominio.com" required>
 
-            <fieldset>
+                    <fieldset>
+                        <legend>*Curso</legend>
+        
+                        <label for="radio-cc"><input type="radio" value="Ciências da Computação" id="radio-cc" name="" checked>Ciência da Computação</label>
+        
+                        <label for="radio-si"><input type="radio" value="Sistema de Informação" id="radio-si" name=""> Sistema de Informação</label>
+        
+                        <label for="radio-cederj"><input type="radio" value="cederj" id="radio-cederj" name=""> Tecnologia em Sistemas de Computação</label>
+                    </fieldset>
+
+                    <label for="Telefone">*Telefone para Contato (Whatsapp/Telegram)</label>
+                    <input type="tel" name="" id="Telefone" class="input_padrao" placeholder="(DDD) 99999-9999" required>
+
+
+                    <fieldset>
+                        <legend>Como você ficou sabendo do processo seletivo?</legend>
+        
+                        <label for="radio-midias-sociais"><input type="radio" value="Mídias Sociais" id="radio-midias-sociais" name="" checked>Mídias Sociais</label>
+        
+                        <label for="radio-indicacao"><input type="radio" value="Indicação" id="radio-indicacao" name=""> Indicação por membros e ex-membros</label>
+        
+                        <label for="radio-professores"><input type="radio" value="professores" id="radio-professores" name="">Professores</label>
+
+                        <label for="radio-outros"><input type="radio" value="outros" id="radio-outros" name="">Outros</label>
+                    
+                    </fieldset>
+
+                    <input type="submit" value="Enviar" class="enviar"> 
+                
+                </div>
+            </form>
+        </div>
+            <!-- <label for="Telefone">Nome da empresa ou projeto <img src="./assets/icone-projeto.svg" alt="Icone de projeto"></label>
+                <input type="text" name="" id="" class="input_padrao" placeholder="projeto" required> -->
+
+            <!-- <fieldset>
                 <legend>O que está buscando</legend>
 
                 <label for="radio-site"><input type="radio" value="site" id="radio-site" name="contato" checked> Site</label>
@@ -96,20 +126,20 @@
                 <label for="radio-web"><input type="radio" value="sistema web" id="radio-web" name="contato"> Sistema Web</label>
 
                 <label for="radio-app"><input type="radio" value="aplicativo" id="radio-app" name="contato"> Aplicativo</label>
-            </fieldset>
+            </fieldset> -->
 
-            <p>Nos dê mais detalhes sobre seu projeto</p>
+            <!-- <p>Nos dê mais detalhes sobre seu projeto</p> -->
 
-            <label for="msg"></label>
-            <textarea name="" id="msg" cols="30" rows="10" class="input_padrao" placeholder="Escreva sua mensagem aqui" required></textarea>
+            <!-- <label for="msg"></label>
+            <textarea name="" id="msg" cols="30" rows="10" class="input_padrao" placeholder="Escreva sua mensagem aqui" required></textarea> -->
 
 
-            <input type="submit" value="Enviar" class="enviar">        
-        </form>
+                   
+
 
     </main>
 
-    <footer>
+    <!-- <footer>
         <div class="footer-container">
             <div class="info-footer">
                 <p class="titulo-footer">Vamos conversar!</p>
@@ -123,6 +153,6 @@
             <img class="logo-footer" src="./assets/Logo.svg" alt="Logo da IN Junior">
         </div>
         <p class="copyright">© Copyright 2021. IN Junior. Todos os direitos reservados. NIterói, Brasil.</p>
-    </footer>
+    </footer> -->
 </body>
 </html>

@@ -494,6 +494,20 @@ body {
   text-align: left;
   margin-bottom: 2.5rem;
 }
+@media screen and (min-width: 500px) {
+  .sobre-in-junior .container-missao-visao {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .sobre-in-junior .container-missao-visao .caixa-missao, .sobre-in-junior .container-missao-visao .caixa-visao {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .sobre-in-junior .caixa-missao, .sobre-in-junior .caixa-visao {
+    max-width: 420px;
+  }
+}
 .sobre-in-junior .valores {
   text-align: center;
   font-weight: 600;
@@ -505,7 +519,7 @@ body {
 }
 .sobre-in-junior .caixas-valores {
   display: flex;
-  gap: 0.9rem;
+  gap: 2rem;
   flex-wrap: wrap;
   padding: 0 1.25rem;
   justify-content: center;

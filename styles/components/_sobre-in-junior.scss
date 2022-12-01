@@ -45,6 +45,7 @@
 
     }
 
+
     .container-missao-visao {
         display: flex;
         flex-direction: column;
@@ -85,6 +86,22 @@
 
     }
 
+    @media screen and (min-width: 500px) {
+      .container-missao-visao {
+        flex-direction: row;
+        gap: 1rem;
+        .caixa-missao, .caixa-visao {
+          width: 45%;
+        }
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      .caixa-missao, .caixa-visao {
+        max-width: 420px;
+      }
+    }
+
     .valores {
       text-align: center;
       font-weight: 600;
@@ -97,7 +114,7 @@
     
     .caixas-valores {
       display: flex;
-      gap: 0.9rem;
+      gap: 2rem;
       flex-wrap: wrap;
       padding: 0 1.25rem;
       justify-content: center;

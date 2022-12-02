@@ -1,48 +1,50 @@
 @import '../abstract/variaveis';
 
 .parcerias {
-    background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
-    
+  background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
+  padding: 3rem 1.5rem 1rem;
+
+  .carousel img{
+    width: unset;
   }
+}
   
-  .parcerias h3 {
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1rem;
-    text-align: center;
-    letter-spacing: 0.385em;
-    color: $branco-light;
-    padding-top: 2.5rem;
-    max-width: 15rem;
-    margin: 0 auto;
-  }
-  
-  .parcerias h2 {
-    text-align: center;
-    padding-top: 0.5rem;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FAFAFA;
-  }
-  
-  .parcerias-container-quatro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 3rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
-  
-  .parcerias-container-tres {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-bottom: 5.5rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
+.parcerias h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.385em;
+  color: $branco-light;
+  margin: 0 auto;
+}
+
+.parcerias h2 {
+  text-align: center;
+  padding-top: 0.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FAFAFA;
+}
+
+// .parcerias-container-quatro {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding-top: 3rem;
+//   padding-left: 7rem;
+//   padding-right: 7rem;
+// }
+
+// .parcerias-container-tres {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-evenly;
+//   padding-bottom: 5.5rem;
+//   padding-left: 7rem;
+//   padding-right: 7rem;
+// }

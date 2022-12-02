@@ -3,16 +3,16 @@
 
 .clientes {
     background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
-    
+    padding: 3rem 1.5rem 1rem;
+
     h3 {
       text-transform: uppercase;
       font-weight: 400;
       font-size: 1rem;
-      line-height: 1rem;
+      line-height: 1;
       text-align: center;
       letter-spacing: 0.385em;
       color: $branco-light;
-      padding-top: 2.5rem;
     }
 
     h2 {
@@ -20,31 +20,14 @@
       padding-top: 0.5rem;
       font-weight: 500;
       font-size: 1.5rem;
-      line-height: 1.5rem;
+      line-height: 1;
       text-align: center;
       text-transform: uppercase;
       color: #FAFAFA;
     }
-  }
 
-
-  .clientes__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 3rem;
-    padding-bottom: 5.5rem;
-  }
-  
-  .elipse {
-    border-radius: 50%;
-    display: inline-block;
-    height: 14.5rem;
-    width: 14.5rem;
-    /* border: 1px solid #000000; */
-    background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow:  0 0 10px 1px rgba(0, 0, 0, 0.4);
+    // BORA REMOVER BOOTSTRAP PLMDS
+    .carousel img{
+      width: unset;
+    }
   }

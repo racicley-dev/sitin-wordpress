@@ -2,4 +2,16 @@
 
 body {
     font-family: $fonte-poppins;
+    background-color: $branco-light;
+}
+
+.largura-site{
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+.largura-site-wide{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
 }

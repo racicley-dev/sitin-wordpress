@@ -13,57 +13,54 @@
 </head>
 <body>
     <header class="cabecalho">
-
-        <img class="container__item" src="./assets/Logo.svg" alt="Logo da IN JUNIOR">
-        <div class="container">
-
-            <input class="container__botao" type="checkbox" name="" id="menu">
-            <label for="menu" class=" ">
-                <span class="cabecalho__menu-hamburguer container__imagem"></span>
-            </label>
-            <ul class="lista-menu">
-                <li class="lista-menu__item">
-                    <a class="lista-menu__link" href="./index.html">INÍCIO</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a class="lista-menu__link" href="./quem-somos.html">QUEM SOMOS</a>
-                </li> 
-                <li class="lista-menu__item">
-                    <a class="lista-menu__link" href="./processo-seletivo.html">PROCESSO SELETIVO</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a class="lista-menu__link" href="./contato.html">CONTATO</a>
-                </li>
-                
+        <div class="largura-site-wide">
+            <img class="container__item" src="./assets/Logo.svg" alt="Logo da IN JUNIOR">
+            <nav class="navegacao">
+                <a href="/contato.html" class="link-orcamento">Orçamento Grátis</a>
+    
+                <input class="navegacao__botao" type="checkbox" name="" id="menu">
+                <label for="menu" class=" ">
+                    <span class="cabecalho__menu-hamburguer navegacao__imagem"></span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a class="lista-menu__link" href="./index.html">INÍCIO</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a class="lista-menu__link" href="./quem-somos.html">QUEM SOMOS</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a class="lista-menu__link" href="./processo-seletivo.html">PROCESSO SELETIVO</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a class="lista-menu__link" href="./contato.html">CONTATO</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <ul class="opcoes">
+                <input class="opcoes__botao" type="checkbox" name="" id="opcoes-menu">
+                <label for="opcoes-menu" class="opcoes__rotulo">
+                    <li class="opcoes__item">Categorias</li>
+                </label>
+    
+                <ul class="lista-menu">
+    
+                    <li class="lista-menu__item">
+                        <a class="lista-menu__link" href="./index.html">INÍCIO</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a class="lista-menu__link" href="./quem-somos.html">QUEM SOMOS</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a class="lista-menu__link" href="./processo-seletivo.html">PROCESSO SELETIVO</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a class="lista-menu__link" href="./contato.html">CONTATO</a>
+                    </li>
+                </ul>
             </ul>
-            
-            
         </div>
-        
-        <ul class="opcoes">
-            <input class="opcoes__botao" type="checkbox" name="" id="opcoes-menu">
-            <label for="opcoes-menu" class="opcoes__rotulo">
-                <li class="opcoes__item">Categorias</li>
-            </label>
-
-            <ul class="lista-menu">
-                
-                <li class="lista-menu__item">
-                    <a class="lista-menu__link" href="./index.html">INÍCIO</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a class="lista-menu__link" href="./quem-somos.html">QUEM SOMOS</a>
-                </li> 
-                <li class="lista-menu__item">
-                    <a class="lista-menu__link" href="./processo-seletivo.html">PROCESSO SELETIVO</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a class="lista-menu__link" href="./contato.html">CONTATO</a>
-                </li>
-            </ul>
-        </ul>
-
-
     </header>
 
     <main>
@@ -185,25 +182,27 @@
 
     </main>
     
-    <!-- <footer>
-        <div class="footer__container">
+    <footer>
+        <div class="footer__container largura-site-wide">
             <div class="footer__container-imagem-textos">
                 <div class="footer__container-informacao">
                     <h3 class="footer__titulo">Vamos conversar!</h3>
+                    <!-- TROCAR PARA MAIL TO -->
                     <p class="footer__contato">contato@injunior.com.br</p>
                 </div>
                 <img class="footer__logo" src="./assets/logo-in-pequena.svg" alt="Logo da IN Junior">
             </div>
             
-            <div class="footer__imagens">
-                <img src="./assets/instagram.svg" alt="Logo do instagram">
-                <img src="./assets/facebook.svg" alt="Logo do facebook">
-                <img src="./assets/linkedin.svg" alt="Logo do linkedin">
+            <div class="footer__social">
+                <a href="#"><img src="./assets/instagram.svg" alt="Logo do instagram"></a>
+                <a href="#"><img src="./assets/facebook.svg" alt="Logo do facebook"></a>
+                <a href="#"><img src="./assets/linkedin.svg" alt="Logo do linkedin"></a>
             </div>
-            <p class="footer__copyright">© Copyright 2021. IN Junior. Todos os direitos reservados. NIterói, Brasil.</p>
+            <p class="footer__disclaimer">A IN Junior é uma empresa Júnior, regulamentada pela lei <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13267.htm">13.267/2016</a>; E por essa razão, sem fins lucrativos. Com intuito de fomentar o crescimento do empreendedorismo no Brasil, queremos cada vez mais impactar a sociedade oferecendo serviços de desenvolvimento de software com preços acessíveis e de qualidade, aplicando toda renda adquirida na formação profissional e pessoal de nossos membros e alunos do Instituto de Computação - UFF.</p>
+            <p class="footer__copyright">© Copyright 2022. IN Junior. Todos os direitos reservados. NIterói, Brasil.</p>
         </div>
         
-    </footer> -->
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

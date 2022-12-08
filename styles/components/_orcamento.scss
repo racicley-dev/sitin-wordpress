@@ -2,53 +2,63 @@
 
 .orcamento__container {
     display: flex;
-    flex-direction: column;
-    padding: 2.5rem 1.25rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+    
+    img {
+      padding-bottom: 1.25rem;
+    }
 
     .orcamento__textos {
       display: flex;
       flex-direction: column;
+      text-align: left;
 
+      @media only screen and (min-width: 900px) {
+        text-align: right;
+        align-items: flex-end;
+      }
+      
       .orcamento__textos-titulo{
-        font-weight: 500;
+        font-weight: 600;
         font-size: 1.5rem;
-        line-height: 2rem;
-        text-align: left;
-        color: #000000;
+        font-size: clamp(1.5rem, 1rem + 2vw, 2rem);
+        line-height: 1;
+        color: $fonte-preta;
       }
 
       .orcamento__textos-paragrafo {
         font-weight: 400;
         font-size: 1rem;
+        max-width: 50ch;
         line-height: 1.5rem;
-        text-align: left;
         color: #000000;
-        text-align: justify;
         padding: 1.25rem 0;
+      }
+
+      .orcamento__botao {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 1rem 2rem;
+        background: $linear-gradiente;
+        box-shadow: 5px 5px 0px 0px #00209240;
+        border-radius: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        color: $branco;
+        transition: box-shadow .3s, transform .3s;
+
+        &:hover{
+          box-shadow: 3px 3px 0px 0px #00209240;
+          transform: translate(1px,1px);
+        }
       }
     }
 
-    img {
-      padding-bottom: 1.25rem;
-    }
-
-    .orcamento__img-botao {
-      text-align: center;
-    }
-
-    .orcamento__botao {
-      font-size: 1rem;
-      font-weight: 600;
-      padding: 1rem 2rem;
-      background: $linear-gradiente;
-      box-shadow: 3px 3px 4px rgb(0 0 0 / 25%), inset 5px 5px 10px #0075eb;
-      border-radius: 5px;
-      text-transform: uppercase;
-      text-decoration: none;
-      text-align: center;
-      display: inline-block;
-      color: $branco;
-    }
   }
   
   

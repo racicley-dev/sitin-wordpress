@@ -1,10 +1,10 @@
 @import '../abstract/variaveis';
 
-
-.destaque {
+.destaque > div{
     display: flex;
-    padding: 3rem 1.5rem 0 1.5rem;
+    padding: 4rem 1.5rem;
     justify-content: space-between;
+    gap: 2rem;
     align-items: center;
     p:first-child {
         font-size: 1.5rem;
@@ -36,8 +36,44 @@
         text-align: center;
         display: inline-block;
         color: $branco;
+        transition: transform .3s , box-shadow .3s;
     }
-    img {
-        display: none;
+    a:hover{
+        box-shadow: 3px 3px 0px 0px #00209240;
+        transform: translate(1px,1px);
+    }
+    .destaque__container-textos{
+        flex: 0 1 500px
+    }
+    svg{
+        width: 35%;
+    }
+    @media only screen and (max-width: 700px) {
+        svg {
+            display: none;
+        }
+    }
+    /* IN */
+    svg path:nth-child(1){stroke-dasharray:2693.4 ;stroke-dashoffset:2693.4 ; animation-delay: 0.1s, 2.5s;color: $azul-gradiente;}
+    svg path:nth-child(2){stroke-dasharray:3899.6 ;stroke-dashoffset:3899.6 ;animation-delay: 0.2s, 2.5s;color: $azul-gradiente;}
+    /* junior */
+    svg path:nth-child(3){stroke-dasharray:942.9 ;stroke-dashoffset:942.9 ;animation-delay: 0.6s, 2.5s;color: $cinza-medio;}
+    svg path:nth-child(4){stroke-dasharray:1132.8 ;stroke-dashoffset:1132.8 ;animation-delay: 0.65s, 2.5s;color: $cinza-medio;}
+    svg path:nth-child(5){stroke-dasharray:1219.7 ;stroke-dashoffset:1219.7 ;animation-delay: 0.7s, 2.5s;color: $cinza-medio;}
+    svg path:nth-child(6){stroke-dasharray:486.5 ;stroke-dashoffset:486.5 ;animation-delay: 0.75s, 2.5s;color: $cinza-medio;}
+    svg path:nth-child(7){stroke-dasharray:1291.9 ;stroke-dashoffset:1291.9 ;animation-delay: 0.8s, 2.5s;color: $cinza-medio;}
+    svg path:nth-child(8){stroke-dasharray:1334.9 ;stroke-dashoffset:1334.9 ;animation-delay: 0.85s, 2.5s;color: $cinza-medio;}
+    /* {} */
+    svg path:nth-child(9){stroke-dasharray:2378.6 ;stroke-dashoffset:2378.6 ;animation-delay: 0.7s, 2.5s;color: $cinza-medio;}
+    svg path:nth-child(10){stroke-dasharray:2380.5 ;stroke-dashoffset:-2380.5 ;animation-delay: 0.7s, 2.5s;color: $cinza-medio;}
+    svg g path{
+        fill: transparent;
+        animation: logo-animation 2s ease forwards, logo-color-animation 1s ease forwards;
+    }
+    @keyframes logo-animation{
+        to{stroke-dashoffset: 0;}
+    }
+    @keyframes logo-color-animation{
+        to{fill: currentColor;}
     }
 }

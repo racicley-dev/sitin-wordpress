@@ -57,7 +57,14 @@ form{
                 border: 2px solid #0066CC;
               }
         }
-    }
+        textarea {
+            padding: 0.75rem 1.25rem;
+            border-radius: 5px;
+            border: 1px solid #0066CC;
+            text-decoration: none;
+            transition: 0.3s;
+            }
+        }
 }
 
 @media screen and (min-width: 850px) {

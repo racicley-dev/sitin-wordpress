@@ -50,6 +50,9 @@ footer{
             text-decoration: none;
             font-weight: 600;
         }
+        a:hover{
+            color: #0066CC;
+        }
         @media screen and (max-width: 600px) {
             display: none;
         }

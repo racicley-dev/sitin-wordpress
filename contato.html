@@ -71,67 +71,27 @@
 
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
             </div>
-            <form action="">
+            <form action="./email.php" method="post" name="contato">
 
                 <div class="form__container">
                     <label for="nome-sobrenome">*Nome Completo</label>
-                    <input type="text" id="nome-sobrenome" class="input_padrao" placeholder="Digite aqui seu nome completo" required>
+                    <input name="nome" type="text" id="nome-sobrenome" class="input_padrao" placeholder="Digite aqui seu nome completo" required>
 
                     <label for="email">*Email para Contato</label>
-                    <input type="email" name="" id="email" class="input_padrao" placeholder="seuemail@dominio.com" required>
-
-                    <fieldset>
-                        <legend>*Curso</legend>
-        
-                        <label for="radio-cc"><input type="radio" value="Ciências da Computação" id="radio-cc" name="curso" checked>Ciência da Computação</label>
-        
-                        <label for="radio-si"><input type="radio" value="Sistema de Informação" id="radio-si" name="curso"> Sistema de Informação</label>
-        
-                        <label for="radio-cederj"><input type="radio" value="cederj" id="radio-cederj" name="curso"> Tecnologia em Sistemas de Computação</label>
-                    </fieldset>
+                    <input type="email" name="email" id="email" class="input_padrao" placeholder="seuemail@dominio.com" required>
 
                     <label for="Telefone">*Telefone para Contato (Whatsapp/Telegram)</label>
-                    <input type="tel" name="" id="Telefone" class="input_padrao" placeholder="(DDD) 99999-9999" required>
+                    <input type="tel" name="telefone" id="Telefone" class="input_padrao" placeholder="(DDD) 99999-9999" required>
 
-
-                    <fieldset>
-                        <legend>Como você ficou sabendo do processo seletivo?</legend>
-        
-                        <label for="radio-midias-sociais"><input type="radio" value="Mídias Sociais" id="radio-midias-sociais" name="onde-soube" checked>Mídias Sociais</label>
-        
-                        <label for="radio-indicacao"><input type="radio" value="Indicação" id="radio-indicacao" name="onde-soube"> Indicação por membros e ex-membros</label>
-        
-                        <label for="radio-professores"><input type="radio" value="professores" id="radio-professores" name="onde-soube">Professores</label>
-
-                        <label for="radio-outros"><input type="radio" value="outros" id="radio-outros" name="onde-soube">Outros</label>
-                    
-                    </fieldset>
+                    <label for="mensagem">Escreva aqui sobre o seu projeto</label>
+                    <textarea name="msg" id="mensagem" cols="30" rows="10" placeholder="Digite aqui sua mensagem" class="input_padrao" required></textarea>
 
                     <input type="submit" value="Enviar" class="enviar"> 
                 
                 </div>
             </form>
         </div>
-            <!-- <label for="Telefone">Nome da empresa ou projeto <img src="./assets/icone-projeto.svg" alt="Icone de projeto"></label>
-                <input type="text" name="" id="" class="input_padrao" placeholder="projeto" required> -->
-
-            <!-- <fieldset>
-                <legend>O que está buscando</legend>
-
-                <label for="radio-site"><input type="radio" value="site" id="radio-site" name="contato" checked> Site</label>
-
-                <label for="radio-web"><input type="radio" value="sistema web" id="radio-web" name="contato"> Sistema Web</label>
-
-                <label for="radio-app"><input type="radio" value="aplicativo" id="radio-app" name="contato"> Aplicativo</label>
-            </fieldset> -->
-
-            <!-- <p>Nos dê mais detalhes sobre seu projeto</p> -->
-
-            <!-- <label for="msg"></label>
-            <textarea name="" id="msg" cols="30" rows="10" class="input_padrao" placeholder="Escreva sua mensagem aqui" required></textarea> -->
-
-
-                   
+             
 
 
     </main>

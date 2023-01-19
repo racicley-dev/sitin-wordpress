@@ -592,6 +592,9 @@ footer {
   text-decoration: none;
   font-weight: 600;
 }
+.footer__container .footer__disclaimer a:hover {
+  color: #0066CC;
+}
 @media screen and (max-width: 600px) {
   .footer__container .footer__disclaimer {
     display: none;
@@ -1102,6 +1105,13 @@ form .form__container input {
 form .form__container input:active {
   border: 2px solid #0066CC;
 }
+form .form__container textarea {
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  border: 1px solid #0066CC;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
 @media screen and (min-width: 850px) {
   .orcamento__container {
@@ -1132,4 +1142,36 @@ form .form__container input:active {
 .img-efej {
   max-width: 95vw;
   margin: 0 auto;
+}
+
+.form__container-ps {
+  margin-top: 2.5rem;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 1rem;
+  gap: 0.75rem;
+}
+.form__container-ps label {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+.form__container-ps fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.form__container-ps input {
+  font-family: "Poppins" sans-serif;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  border: 1px solid #0066CC;
+  text-decoration: none;
+  margin-top: 0.75rem;
+  transition: 0.3s;
+}
+.form__container-ps input:active {
+  border: 2px solid #0066CC;
 }/*# sourceMappingURL=style.css.map */

@@ -631,6 +631,40 @@ footer {
   flex-direction: column;
   gap: 2rem;
 }
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(45deg);
+  }
+  5% {
+    transform: rotate(35deg);
+  }
+  20% {
+    transform: rotate(235deg);
+  }
+  25% {
+    transform: rotate(225deg);
+  }
+  100% {
+    transform: rotate(225deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(45deg);
+  }
+  5% {
+    transform: rotate(35deg);
+  }
+  20% {
+    transform: rotate(235deg);
+  }
+  25% {
+    transform: rotate(225deg);
+  }
+  100% {
+    transform: rotate(225deg);
+  }
+}
 .sobre-in-junior .elipse-somos .elipse-somos-titulo {
   font-weight: 600;
   font-size: 36px;
@@ -1045,26 +1079,26 @@ footer {
   height: 460px;
 }
 
-.orcamento__container {
+.contato__container {
   padding: 20px;
 }
 
-.orcamento__container-textos {
+.contato__container-textos {
   padding: 0 1.25rem;
   padding-top: 2rem;
 }
-.orcamento__container-textos h2 {
+.contato__container-textos h2 {
   font-size: 2rem;
   font-weight: 500;
   line-height: 2.25rem;
 }
-.orcamento__container-textos h3 {
+.contato__container-textos h3 {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 2rem;
   padding: 1rem 0;
 }
-.orcamento__container-textos p {
+.contato__container-textos p {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;

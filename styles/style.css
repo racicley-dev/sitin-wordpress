@@ -464,6 +464,7 @@ header > div {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 3rem 1.5rem;
+  align-items: flex-start;
 }
 .orcamento__container img {
   padding-bottom: 1.25rem;
@@ -478,6 +479,9 @@ header > div {
     text-align: right;
     align-items: flex-end;
   }
+}
+.orcamento__container .orcamento__textos .orcamento__container-textos {
+  margin-top: 1rem;
 }
 .orcamento__container .orcamento__textos .orcamento__textos-titulo {
   font-weight: 600;
@@ -865,6 +869,81 @@ footer {
   text-align: left;
 }
 
+.main-container {
+  position: relative;
+  width: 500px;
+}
+
+/*creating line for timeline*/
+.main-container::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  background-color: blue;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/*Adjusting box of all content*/
+.text-wrapper {
+  padding: 10px 40px;
+  position: relative;
+  width: 51%;
+  box-sizing: border-box;
+  margin: 50px 0;
+}
+
+.text-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  right: -10px;
+  background-color: blue;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/*for left events*/
+.left {
+  left: 0;
+}
+
+/*for right events*/
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -10px;
+}
+
+/*content box colour padding and radius for circular corner*/
+.content {
+  padding: 15px 15px 15px 17px;
+  background-color: lightblue;
+  border-radius: 4px;
+}
+
+/*setting text property of event heading*/
+.content h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #212121;
+  letter-spacing: 1px;
+}
+
+/*setting text property of event content*/
+.content p {
+  color: #616161;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
 .carousel-indicators [data-bs-target] {
   background-color: #666666 !important;
 }
@@ -883,12 +962,6 @@ footer {
 }
 .container__carousel p {
   padding-top: 0.7rem;
-}
-
-.container__carousel-img {
-  position: absolute;
-  top: -2rem;
-  right: 8rem;
 }
 
 .card-depoimentos {
@@ -1012,9 +1085,12 @@ form .form__container input {
   padding: 0.75rem 1.25rem;
   border-radius: 5px;
   border: 1px solid #0066CC;
-  text-transform: uppercase;
   text-decoration: none;
   margin-top: 0.75rem;
+  transition: 0.3s;
+}
+form .form__container input:active {
+  border: 2px solid #0066CC;
 }
 
 @media screen and (min-width: 850px) {

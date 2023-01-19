@@ -964,6 +964,15 @@ footer {
   padding-top: 0.7rem;
 }
 
+.container__carousel-img {
+  z-index: 1;
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
 .card-depoimentos {
   background: rgba(67, 136, 204, 0.1);
 }
@@ -1112,4 +1121,14 @@ form .form__container input:active {
     font-size: 2rem;
     padding-bottom: 4rem;
   }
+}
+.participacao-eventos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-efej {
+  max-width: 95vw;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

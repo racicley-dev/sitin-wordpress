@@ -17,7 +17,6 @@
   border-radius: 16px;
   color: #FAFAFA;
   padding: 6rem 1.25rem 4rem 1.25rem;
-  // position: relative;
 
   p {
     padding-top: 0.7rem;
@@ -25,9 +24,12 @@
 }
 
 .container__carousel-img {
-  // position: absolute;
-  // top: -2rem;
-  // right: 8rem;
+  z-index: 1;
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 
 

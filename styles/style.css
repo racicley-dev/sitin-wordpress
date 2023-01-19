@@ -959,6 +959,7 @@ footer {
   border-radius: 16px;
   color: #FAFAFA;
   padding: 6rem 1.25rem 4rem 1.25rem;
+  position: relative;
 }
 .container__carousel p {
   padding-top: 0.7rem;
@@ -967,7 +968,7 @@ footer {
 .container__carousel-img {
   z-index: 1;
   position: absolute;
-  top: -2rem;
+  top: -5rem;
   right: 0;
   left: 0;
   margin: auto;

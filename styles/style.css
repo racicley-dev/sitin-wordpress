@@ -455,6 +455,9 @@ header > div {
   text-transform: uppercase;
   color: #FAFAFA;
 }
+.clientes .content-wrapper {
+  padding: 3.5rem;
+}
 
 .orcamento__container {
   display: flex;
@@ -519,8 +522,8 @@ header > div {
   background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
   padding: 3rem 1.5rem 1rem;
 }
-.parcerias .carousel img {
-  width: unset;
+.parcerias .content-wrapper {
+  padding: 3.5rem;
 }
 
 .parcerias h3 {

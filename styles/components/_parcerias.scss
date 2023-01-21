@@ -4,8 +4,8 @@
   background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
   padding: 3rem 1.5rem 1rem;
 
-  .carousel img {
-    width: unset;
+  .content-wrapper {
+    padding: 3.5rem;
   }
 }
 
@@ -31,21 +31,3 @@
   color: #FAFAFA;
   margin-bottom: 2rem;
 }
-
-// .parcerias-container-quatro {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   padding-top: 3rem;
-//   padding-left: 7rem;
-//   padding-right: 7rem;
-// }
-
-// .parcerias-container-tres {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-evenly;
-//   padding-bottom: 5.5rem;
-//   padding-left: 7rem;
-//   padding-right: 7rem;
-// }

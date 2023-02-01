@@ -2,7 +2,7 @@
 
 .parcerias {
   background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
-  padding: 3rem 0rem 1rem;
+  padding: 3rem 0rem 0rem 1rem;
 
   h3 {
     text-transform: uppercase;
@@ -24,14 +24,16 @@
     text-align: center;
     text-transform: uppercase;
     color: #FAFAFA;
-    margin-bottom: 2rem;
   }
 
-  .card img {
+  .content-wrapper .card{
+    text-align: center;
+  }
+
+  .card img{
     width: 150px;
-    margin: 10% 27%;
-  }
-
+    margin: 3rem 0;
+  } 
 }
 
 

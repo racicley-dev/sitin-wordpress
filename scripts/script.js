@@ -1,7 +1,7 @@
 
 var swiper = new Swiper(".slide-clientes", {
-  slidesPerView: 3,
-  spaceBetween: 20,
+  slidesPerView: 1,
+  spaceBetween: 0,
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
@@ -16,8 +16,8 @@ var swiper = new Swiper(".slide-clientes", {
 });
 
 var swiper = new Swiper(".slide-parcerias", {
-  slidesPerView: 3,
-  spaceBetween: 20,
+  slidesPerView: 1,
+  spaceBetween: 0,
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,

@@ -2,32 +2,38 @@
 
 
 .clientes {
-    background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
-    padding: 3rem 1.5rem 1rem;
+  background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
+  padding: 3rem 0rem 0rem 1rem;
 
-    h3 {
-      text-transform: uppercase;
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 1;
-      text-align: center;
-      letter-spacing: 0.385em;
-      color: $branco-light;
-    }
+  h3 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.385em;
 
-    h2 {
-      text-align: center;
-      padding-top: 0.5rem;
-      font-weight: 500;
-      font-size: 1.5rem;
-      line-height: 1;
-      text-align: center;
-      text-transform: uppercase;
-      color: #FAFAFA;
-    }
-
-    // BORA REMOVER BOOTSTRAP PLMDS
-    .carousel img{
-      width: unset;
-    }
+    color: $branco-light;
   }
+
+  h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FAFAFA;
+  }
+
+  .content-wrapper .card{
+    text-align: center;
+  }
+
+  .card img{
+    width: 150px;
+    margin: 3rem 0;
+  } 
+
+}

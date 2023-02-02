@@ -1,18 +1,20 @@
 @import '../abstract/variaveis';
 
 
-.sobre-in-junior {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    padding-top: 4rem;
-  
+.sobre-injunior {
+    overflow: hidden;
+    
+    .somos-injunior{
+      display: flex;
+      justify-content: center;
+      padding: 4rem 10px;
+    }
+    
     .elipse-somos {
-        background: rgba(0, 95, 191, 0.8);
-        border: 3px solid rgba(67, 136, 204, 0.5);
-        box-shadow: inset 0px 0px 30px rgba(67, 136, 204, 0.5);
+      position: relative;
+        background: $azul-gradiente;
+        border: 3px solid #004891;
+        box-shadow: inset 0px 0px 30px $azul-gradiente;
         border-radius: 50%;
         display: inline-block;
         height: 20rem;
@@ -24,6 +26,25 @@
         align-content: center;
         flex-direction: column;
         gap: 2rem;
+
+        &::before {
+          content:'';
+          pointer-events: none;
+          align-self: center;
+          position: absolute;
+          border-style: solid solid solid solid;
+          border-color: transparent $azul-gradiente transparent $azul-gradiente;
+          transform: rotate(45deg);
+          padding: 10px;
+          border-radius: 50%;
+          width: 80vmin;
+          height: 80vmin;
+          min-width: 345px;
+          min-height: 345px;
+          max-width: 345px;
+          max-height: 345px;
+          animation: ease-in-out 4s 5s rotation infinite;
+        }
 
         @keyframes rotation{
           0%{ 
@@ -53,12 +74,12 @@
         .elipse-somos-paragrafo {
             font-weight: 400;
             font-size: 14px;
-            line-height: 26px;
+            line-height: 1.6;
             display: flex;
             align-items: center;
             text-align: center;
             color: #FAFAFA;
-            max-width: 95%;
+            max-width: 90%;
         }
 
     }
@@ -66,11 +87,10 @@
 
     .container-missao-visao {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        padding-top: 4rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 2rem 1.25rem;
 
         h3 {
             font-weight: 600;
@@ -91,33 +111,18 @@
         }
 
         .caixa-missao, .caixa-visao {
-
             background: #FAFAFA;
             box-shadow: 5px 5px 0px rgba(0, 32, 146, 0.25);
             border-radius: 16px;
             padding: 0 1.25rem;
             text-align: left;
-            margin-bottom: 2.5rem;
-        
+            flex: 300px 1 1;
+            max-width: 50ch;
         }
-
-
     }
 
-    @media screen and (min-width: 500px) {
-      .container-missao-visao {
-        flex-direction: row;
-        gap: 1rem;
-        .caixa-missao, .caixa-visao {
-          width: 45%;
-        }
-      }
-    }
-
-    @media screen and (min-width: 900px) {
-      .caixa-missao, .caixa-visao {
-        max-width: 420px;
-      }
+    .container-valores{
+      padding: 2rem 1rem;
     }
 
     .valores {
@@ -126,16 +131,14 @@
       font-size: 2.25rem;
       line-height: 3rem;
       color: #1C1C1C;
-      padding-bottom: 2rem;
-      padding-top: 4rem;
+      padding-bottom: 1.5rem;
     }
     
     .caixas-valores {
       display: flex;
       gap: 2rem;
       flex-wrap: wrap;
-      padding: 0 1.25rem;
-      justify-content: center;
+      justify-content: space-evenly;
 
       div {
         display: flex;
@@ -143,11 +146,12 @@
         background: #FAFAFA;
         box-shadow: 5px 5px 0px rgb(0 32 146 / 25%);
         border-radius: 1rem;
-        width: 10rem;
+        width: 9rem;
         height: 13rem;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 1rem;
 
         p {
           width: 7.5rem;

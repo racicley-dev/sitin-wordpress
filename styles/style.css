@@ -639,18 +639,19 @@ footer {
   margin-top: 1rem;
 }
 
-.sobre-in-junior {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  padding-top: 4rem;
+.sobre-injunior {
+  overflow: hidden;
 }
-.sobre-in-junior .elipse-somos {
-  background: rgba(0, 95, 191, 0.8);
-  border: 3px solid rgba(67, 136, 204, 0.5);
-  box-shadow: inset 0px 0px 30px rgba(67, 136, 204, 0.5);
+.sobre-injunior .somos-injunior {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 10px;
+}
+.sobre-injunior .elipse-somos {
+  position: relative;
+  background: #0066CC;
+  border: 3px solid #004891;
+  box-shadow: inset 0px 0px 30px #0066CC;
   border-radius: 50%;
   display: inline-block;
   height: 20rem;
@@ -662,6 +663,25 @@ footer {
   align-content: center;
   flex-direction: column;
   gap: 2rem;
+}
+.sobre-injunior .elipse-somos::before {
+  content: "";
+  pointer-events: none;
+  align-self: center;
+  position: absolute;
+  border-style: solid solid solid solid;
+  border-color: transparent #0066CC transparent #0066CC;
+  transform: rotate(45deg);
+  padding: 10px;
+  border-radius: 50%;
+  width: 80vmin;
+  height: 80vmin;
+  min-width: 345px;
+  min-height: 345px;
+  max-width: 345px;
+  max-height: 345px;
+  -webkit-animation: ease-in-out 4s 5s rotation infinite;
+          animation: ease-in-out 4s 5s rotation infinite;
 }
 @-webkit-keyframes rotation {
   0% {
@@ -697,31 +717,30 @@ footer {
     transform: rotate(225deg);
   }
 }
-.sobre-in-junior .elipse-somos .elipse-somos-titulo {
+.sobre-injunior .elipse-somos .elipse-somos-titulo {
   font-weight: 600;
   font-size: 36px;
   line-height: 2rem;
   color: #FAFAFA;
 }
-.sobre-in-junior .elipse-somos .elipse-somos-paragrafo {
+.sobre-injunior .elipse-somos .elipse-somos-paragrafo {
   font-weight: 400;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 1.6;
   display: flex;
   align-items: center;
   text-align: center;
   color: #FAFAFA;
-  max-width: 95%;
+  max-width: 90%;
 }
-.sobre-in-junior .container-missao-visao {
+.sobre-injunior .container-missao-visao {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding-top: 4rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 1.25rem;
 }
-.sobre-in-junior .container-missao-visao h3 {
+.sobre-injunior .container-missao-visao h3 {
   font-weight: 600;
   font-size: 2rem;
   color: #1C1C1C;
@@ -729,7 +748,7 @@ footer {
   position: relative;
   top: -1rem;
 }
-.sobre-in-junior .container-missao-visao p {
+.sobre-injunior .container-missao-visao p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -737,57 +756,46 @@ footer {
   text-align: left;
   padding-bottom: 1rem;
 }
-.sobre-in-junior .container-missao-visao .caixa-missao, .sobre-in-junior .container-missao-visao .caixa-visao {
+.sobre-injunior .container-missao-visao .caixa-missao, .sobre-injunior .container-missao-visao .caixa-visao {
   background: #FAFAFA;
   box-shadow: 5px 5px 0px rgba(0, 32, 146, 0.25);
   border-radius: 16px;
   padding: 0 1.25rem;
   text-align: left;
-  margin-bottom: 2.5rem;
+  flex: 300px 1 1;
+  max-width: 50ch;
 }
-@media screen and (min-width: 500px) {
-  .sobre-in-junior .container-missao-visao {
-    flex-direction: row;
-    gap: 1rem;
-  }
-  .sobre-in-junior .container-missao-visao .caixa-missao, .sobre-in-junior .container-missao-visao .caixa-visao {
-    width: 45%;
-  }
+.sobre-injunior .container-valores {
+  padding: 2rem 1rem;
 }
-@media screen and (min-width: 900px) {
-  .sobre-in-junior .caixa-missao, .sobre-in-junior .caixa-visao {
-    max-width: 420px;
-  }
-}
-.sobre-in-junior .valores {
+.sobre-injunior .valores {
   text-align: center;
   font-weight: 600;
   font-size: 2.25rem;
   line-height: 3rem;
   color: #1C1C1C;
-  padding-bottom: 2rem;
-  padding-top: 4rem;
+  padding-bottom: 1.5rem;
 }
-.sobre-in-junior .caixas-valores {
+.sobre-injunior .caixas-valores {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  padding: 0 1.25rem;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-.sobre-in-junior .caixas-valores div {
+.sobre-injunior .caixas-valores div {
   display: flex;
   text-align: center;
   background: #FAFAFA;
   box-shadow: 5px 5px 0px rgba(0, 32, 146, 0.25);
   border-radius: 1rem;
-  width: 10rem;
+  width: 9rem;
   height: 13rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
-.sobre-in-junior .caixas-valores div p {
+.sobre-injunior .caixas-valores div p {
   width: 7.5rem;
 }
 
@@ -797,7 +805,7 @@ footer {
   align-content: center;
   justify-content: center;
   align-items: center;
-  padding: 5rem 1.25rem 1.25rem 1.25rem;
+  padding: 2rem 1.25rem;
 }
 .mej__container h2 {
   font-weight: 600;

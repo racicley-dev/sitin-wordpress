@@ -1,0 +1,165 @@
+.sobre-injunior {
+  overflow: hidden;
+
+  .somos-injunior {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 10px;
+  }
+
+  .elipse-somos {
+    position: relative;
+    background: #0066CC;
+    border: 3px solid #004891;
+    box-shadow: inset 0px 0px 30px #0066CC;
+    border-radius: 50%;
+    display: inline-block;
+    height: 20rem;
+    width: 20rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    &::before {
+      content: '';
+      pointer-events: none;
+      align-self: center;
+      position: absolute;
+      border-style: solid solid solid solid;
+      border-color: transparent #0066CC transparent #0066CC;
+      transform: rotate(45deg);
+      padding: 10px;
+      border-radius: 50%;
+      width: 80vmin;
+      height: 80vmin;
+      min-width: 345px;
+      min-height: 345px;
+      max-width: 345px;
+      max-height: 345px;
+      animation: ease-in-out 4s 5s rotation infinite;
+    }
+
+    @keyframes rotation {
+      0% {
+        transform: rotate(45deg);
+      }
+
+      5% {
+        transform: rotate(35deg);
+      }
+
+      20% {
+        transform: rotate(235deg);
+      }
+
+      25% {
+        transform: rotate(225deg);
+      }
+
+      100% {
+        transform: rotate(225deg);
+      }
+    }
+
+    .elipse-somos-titulo {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 2rem;
+      color: #FAFAFA;
+    }
+
+    .elipse-somos-paragrafo {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.6;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #FAFAFA;
+      max-width: 90%;
+    }
+
+  }
+
+
+  .container-missao-visao {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 1.25rem;
+
+    h3 {
+      font-weight: 600;
+      font-size: 2rem;
+      color: #1C1C1C;
+      text-align: center;
+      position: relative;
+      top: -1rem;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #666666;
+      text-align: left;
+      padding-bottom: 1rem;
+    }
+
+    .caixa-missao, .caixa-visao {
+      background: #FAFAFA;
+      box-shadow: 5px 5px 0px rgba(0, 32, 146, 0.25);
+      border-radius: 16px;
+      padding: 0 1.25rem;
+      text-align: left;
+      flex: 300px 1 1;
+      max-width: 50ch;
+    }
+  }
+
+  .container-valores {
+    padding: 2rem 1rem;
+  }
+
+  .valores {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    color: #1C1C1C;
+    padding-bottom: 1.5rem;
+  }
+
+  .caixas-valores {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    div {
+      display: flex;
+      text-align: center;
+      background: #FAFAFA;
+      box-shadow: 5px 5px 0px rgb(0 32 146 / 25%);
+      border-radius: 1rem;
+      width: 9rem;
+      height: 13rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      p {
+        width: 7.5rem;
+      }
+
+    }
+
+  }
+
+}

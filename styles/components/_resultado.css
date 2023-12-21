@@ -1,0 +1,107 @@
+.resultado {
+    background: linear-gradient(87.76deg, #0066CC 0.01%, #004891 99.48%);
+    ;
+    width: 100%;
+
+    &>div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2rem 10px;
+        row-gap: 2rem;
+    }
+
+    .resultado__container {
+        display: flex;
+        flex: 0 1 450px;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2rem;
+
+        img {
+            will-change: transform;
+            --x-offset: 30px;
+            --y-offset: -70px;
+            --scale: 2;
+            animation: floating 3s infinite alternate;
+            transform-origin: top right;
+            transform:
+                translateX(30px) translateY(-70px) scale(2)
+        }
+
+        @keyframes floating {
+            from {
+                transform:
+                    translateX(var(--x-offset)) translateY(calc(var(--y-offset) - 10px)) scale(var(--scale))
+            }
+
+            to {
+                transform:
+                    translateX(var(--x-offset)) translateY(var(--y-offset)) scale(var(--scale))
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            flex-direction: row-reverse;
+
+            img {
+                --x-offset: 10px;
+                --scale: 1.5;
+                transform:
+                    translateX(10px) translateY(-70px) scale(1.5)
+            }
+        }
+
+        @media only screen and (max-width: 420px) {
+            gap: 1rem;
+
+            img {
+                --x-offset: 10px;
+                --scale: 1.2;
+                transform:
+                    translateX(10px) translateY(-70px) scale(1.2)
+            }
+        }
+
+        .resultado__titulo {
+            font-weight: 600;
+            font-size: 1.5rem;
+            font-size: clamp(1.2rem, 1rem + 1vw, 1.5rem);
+            line-height: 1.5;
+            color: #FAFAFA;
+        }
+    }
+
+    .resultado__numeros {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        .numero {
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: #FAFAFA;
+        }
+
+        .resultado__numero__textos {
+            font-size: 1rem;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #FAFAFA;
+            text-align: center;
+            max-width: 140px;
+        }
+
+    }
+
+}

@@ -1,0 +1,52 @@
+.posicao-relativa-cima {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: black;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.posicao-relativa-baixo {
+    position: relative;
+    color: black;
+    right: 0;
+    bottom: 1.25rem;
+    left: 0;
+    padding-top: 2rem;
+    padding-bottom: 1.25rem;
+    text-align: justify;
+}
+
+.centralizando {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-card {
+    width: 75%;
+    align-self: center;
+    box-shadow: 5px 5px 0px 0px #00209240;
+}
+
+.cargos__container-titulo {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cargos__container-subtitulo-area {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.cargos__container-subtitulo-funcao {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.cargos__container-paragrafo {
+    font-size: 1rem;
+    font-weight: 400;
+}

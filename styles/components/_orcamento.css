@@ -1,0 +1,65 @@
+.orcamento__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+    align-items: flex-start;
+
+    img {
+        padding-bottom: 1.25rem;
+    }
+
+    .orcamento__textos {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        @media only screen and (min-width: 900px) {
+            text-align: right;
+            align-items: flex-end;
+        }
+
+        .orcamento__container-textos {
+            margin-top: 1rem;
+        }
+
+        .orcamento__textos-titulo {
+            font-weight: 600;
+            font-size: 1.5rem;
+            font-size: clamp(1.5rem, 1rem + 2vw, 2rem);
+            line-height: 1;
+            color: #1C1C1C;
+        }
+
+        .orcamento__textos-paragrafo {
+            font-weight: 400;
+            font-size: 1rem;
+            max-width: 50ch;
+            line-height: 1.5rem;
+            color: #000000;
+            padding: 1.25rem 0;
+        }
+
+        .orcamento__botao {
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            background: linear-gradient(89.13deg, #0066CC 1.18%, #004891 101.08%);
+            box-shadow: 5px 5px 0px 0px #00209240;
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            color: #FFF;
+            transition: box-shadow .3s, transform .3s;
+
+            &:hover {
+                box-shadow: 3px 3px 0px 0px #00209240;
+                transform: translate(1px, 1px);
+            }
+        }
+    }
+
+}
